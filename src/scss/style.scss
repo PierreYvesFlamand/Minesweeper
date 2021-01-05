@@ -1,4 +1,7 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:700';
+@font-face {
+    font-family: 'visitor1';
+    src: url('visitor1.ttf') format('ttf');
+}
 
 * {
     box-sizing: border-box;
@@ -7,8 +10,7 @@
 body {
     margin: 0;
     background: teal url(../win-bg.jpg) center/cover no-repeat;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+    font-family: 'visitor1', sans-serif;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -19,13 +21,24 @@ body {
 .grid-header {
     border: 5px solid rgba(0, 0, 0, 0.9);
     border-bottom: none;
+    height: 3rem;
     width: 70vh;
     background-color: #f3f3f3;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     padding: 0 1em;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+
+    & > span {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .flag {
+        font-size: 1.2rem;
+        margin-top: -0.3rem;
+    }
 
     #custom {
         cursor: pointer;

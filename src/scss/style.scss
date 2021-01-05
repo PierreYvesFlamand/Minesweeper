@@ -1,0 +1,60 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:700';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: teal url(../win-bg.jpg) center/cover no-repeat;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-header {
+    border: 5px solid rgba(0, 0, 0, 0.9);
+    border-bottom: none;
+    width: 70vh;
+    background-color: #f3f3f3;
+    font-size: 1.1rem;
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    #custom {
+        cursor: pointer;
+        transition: 150ms ease-in;
+
+        &:hover {
+            color: rgb(38, 52, 177);
+        }
+    }
+}
+
+.grid {
+    position: relative;
+    border: 5px solid rgba(0, 0, 0, 0.9);
+    display: grid;
+    width: 70vh;
+    height: 70vh;
+}
+
+.square {
+    position: relative;
+    background: #f3f3f3;
+    border: 1px solid #363534;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
